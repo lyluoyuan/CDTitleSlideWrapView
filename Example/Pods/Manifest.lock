@@ -1,0 +1,23 @@
+PODS:
+  - CDTitleSlideWrapView (0.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - CDTitleSlideWrapView (from `../`)
+  - Masonry (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  CDTitleSlideWrapView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CDTitleSlideWrapView: 59abb78ee3a6e3a48cfc5632cb52cbb9fc825382
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 178744fade86fc5afde9189d2d2a1cf28386bbba
+
+COCOAPODS: 1.7.4

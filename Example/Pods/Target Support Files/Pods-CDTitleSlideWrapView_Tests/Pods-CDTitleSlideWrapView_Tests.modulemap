@@ -1,0 +1,6 @@
+framework module Pods_CDTitleSlideWrapView_Tests {
+  umbrella header "Pods-CDTitleSlideWrapView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

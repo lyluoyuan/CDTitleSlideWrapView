@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BFA6752370254800EB0047 /* CDSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6682370254800EB0047 /* CDSlideView.m */; };
+		04BFA6762370254800EB0047 /* CDTitleTabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA66C2370254800EB0047 /* CDTitleTabCollectionViewCell.m */; };
+		04BFA6772370254800EB0047 /* CDTitleTabViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA66F2370254800EB0047 /* CDTitleTabViewModel.m */; };
+		04BFA6782370254800EB0047 /* CDTitleTabCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6712370254800EB0047 /* CDTitleTabCollectionView.m */; };
+		04BFA6792370254800EB0047 /* CDTitleTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6722370254800EB0047 /* CDTitleTabView.m */; };
+		04BFA67A2370254800EB0047 /* CDTitleSlideWrapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6742370254800EB0047 /* CDTitleSlideWrapView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,10 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04BFA6682370254800EB0047 /* CDSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSlideView.m; sourceTree = "<group>"; };
+		04BFA6692370254800EB0047 /* CDSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSlideView.h; sourceTree = "<group>"; };
+		04BFA66A2370254800EB0047 /* CDTitleSlideWrapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleSlideWrapView.h; sourceTree = "<group>"; };
+		04BFA66C2370254800EB0047 /* CDTitleTabCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabCollectionViewCell.m; sourceTree = "<group>"; };
+		04BFA66D2370254800EB0047 /* CDTitleTabCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabCollectionView.h; sourceTree = "<group>"; };
+		04BFA66E2370254800EB0047 /* CDTitleTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabView.h; sourceTree = "<group>"; };
+		04BFA66F2370254800EB0047 /* CDTitleTabViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabViewModel.m; sourceTree = "<group>"; };
+		04BFA6702370254800EB0047 /* CDTitleTabCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabCollectionViewCell.h; sourceTree = "<group>"; };
+		04BFA6712370254800EB0047 /* CDTitleTabCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabCollectionView.m; sourceTree = "<group>"; };
+		04BFA6722370254800EB0047 /* CDTitleTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabView.m; sourceTree = "<group>"; };
+		04BFA6732370254800EB0047 /* CDTitleTabViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabViewModel.h; sourceTree = "<group>"; };
+		04BFA6742370254800EB0047 /* CDTitleSlideWrapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleSlideWrapView.m; sourceTree = "<group>"; };
 		203151F1E5FD72DBEF32D13A /* Pods_CDTitleSlideWrapView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDTitleSlideWrapView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DB308329471041F59B7512 /* Pods-CDTitleSlideWrapView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDTitleSlideWrapView_Example.debug.xcconfig"; path = "Target Support Files/Pods-CDTitleSlideWrapView_Example/Pods-CDTitleSlideWrapView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		24853779BD33C5CBC8E87C11 /* Pods-CDTitleSlideWrapView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDTitleSlideWrapView_Example.release.xcconfig"; path = "Target Support Files/Pods-CDTitleSlideWrapView_Example/Pods-CDTitleSlideWrapView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3F77C9DCC0424CAAAE57E7D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3F77C9DCC0424CAAAE57E7D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CDTitleSlideWrapView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDTitleSlideWrapView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +82,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D72EBBDC8AAC20E0DEDA5A6 /* Pods_CDTitleSlideWrapView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDTitleSlideWrapView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CDTitleSlideWrapView.podspec; path = ../CDTitleSlideWrapView.podspec; sourceTree = "<group>"; };
-		A4095673D537AEE5DC0FF297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CDTitleSlideWrapView.podspec; path = ../CDTitleSlideWrapView.podspec; sourceTree = "<group>"; };
+		A4095673D537AEE5DC0FF297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D444E20DAE440B0D8E036BD4 /* Pods-CDTitleSlideWrapView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDTitleSlideWrapView_Tests.release.xcconfig"; path = "Target Support Files/Pods-CDTitleSlideWrapView_Tests/Pods-CDTitleSlideWrapView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +113,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BFA6662370254800EB0047 /* CDTitleSlideWrapView */ = {
+			isa = PBXGroup;
+			children = (
+				04BFA6672370254800EB0047 /* CDSlideView */,
+				04BFA66A2370254800EB0047 /* CDTitleSlideWrapView.h */,
+				04BFA6742370254800EB0047 /* CDTitleSlideWrapView.m */,
+				04BFA66B2370254800EB0047 /* CDTitleTabView */,
+			);
+			name = CDTitleSlideWrapView;
+			path = ../../../../../temp/CDTitleSlideWrapView;
+			sourceTree = "<group>";
+		};
+		04BFA6672370254800EB0047 /* CDSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				04BFA6692370254800EB0047 /* CDSlideView.h */,
+				04BFA6682370254800EB0047 /* CDSlideView.m */,
+			);
+			path = CDSlideView;
+			sourceTree = "<group>";
+		};
+		04BFA66B2370254800EB0047 /* CDTitleTabView */ = {
+			isa = PBXGroup;
+			children = (
+				04BFA66D2370254800EB0047 /* CDTitleTabCollectionView.h */,
+				04BFA6712370254800EB0047 /* CDTitleTabCollectionView.m */,
+				04BFA6702370254800EB0047 /* CDTitleTabCollectionViewCell.h */,
+				04BFA66C2370254800EB0047 /* CDTitleTabCollectionViewCell.m */,
+				04BFA66E2370254800EB0047 /* CDTitleTabView.h */,
+				04BFA6722370254800EB0047 /* CDTitleTabView.m */,
+				04BFA6732370254800EB0047 /* CDTitleTabViewModel.h */,
+				04BFA66F2370254800EB0047 /* CDTitleTabViewModel.m */,
+			);
+			path = CDTitleTabView;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +232,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				04BFA6662370254800EB0047 /* CDTitleSlideWrapView */,
 				9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */,
 				3F77C9DCC0424CAAAE57E7D0 /* README.md */,
 				A4095673D537AEE5DC0FF297 /* LICENSE */,
@@ -193,7 +248,6 @@
 				6694DBF12171A07E410BC5CE /* Pods-CDTitleSlideWrapView_Tests.debug.xcconfig */,
 				D444E20DAE440B0D8E036BD4 /* Pods-CDTitleSlideWrapView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +302,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "lyluoyuan@126.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = B26F745XHV;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -347,10 +404,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CDTitleSlideWrapView_Example/Pods-CDTitleSlideWrapView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CDTitleSlideWrapView/CDTitleSlideWrapView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CDTitleSlideWrapView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,8 +424,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
+				04BFA6762370254800EB0047 /* CDTitleTabCollectionViewCell.m in Sources */,
+				04BFA67A2370254800EB0047 /* CDTitleSlideWrapView.m in Sources */,
 				6003F5A7195388D20070C39A /* LYViewController.m in Sources */,
+				04BFA6782370254800EB0047 /* CDTitleTabCollectionView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				04BFA6772370254800EB0047 /* CDTitleTabViewModel.m in Sources */,
+				04BFA6792370254800EB0047 /* CDTitleTabView.m in Sources */,
+				04BFA6752370254800EB0047 /* CDSlideView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +559,7 @@
 			baseConfigurationReference = 21DB308329471041F59B7512 /* Pods-CDTitleSlideWrapView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B26F745XHV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTitleSlideWrapView/CDTitleSlideWrapView-Prefix.pch";
 				INFOPLIST_FILE = "CDTitleSlideWrapView/CDTitleSlideWrapView-Info.plist";
@@ -510,6 +576,7 @@
 			baseConfigurationReference = 24853779BD33C5CBC8E87C11 /* Pods-CDTitleSlideWrapView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B26F745XHV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTitleSlideWrapView/CDTitleSlideWrapView-Prefix.pch";
 				INFOPLIST_FILE = "CDTitleSlideWrapView/CDTitleSlideWrapView-Info.plist";
