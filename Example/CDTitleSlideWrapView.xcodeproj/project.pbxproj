@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04BFA6752370254800EB0047 /* CDSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6682370254800EB0047 /* CDSlideView.m */; };
-		04BFA6762370254800EB0047 /* CDTitleTabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA66C2370254800EB0047 /* CDTitleTabCollectionViewCell.m */; };
-		04BFA6772370254800EB0047 /* CDTitleTabViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA66F2370254800EB0047 /* CDTitleTabViewModel.m */; };
-		04BFA6782370254800EB0047 /* CDTitleTabCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6712370254800EB0047 /* CDTitleTabCollectionView.m */; };
-		04BFA6792370254800EB0047 /* CDTitleTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6722370254800EB0047 /* CDTitleTabView.m */; };
-		04BFA67A2370254800EB0047 /* CDTitleSlideWrapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA6742370254800EB0047 /* CDTitleSlideWrapView.m */; };
+		04FB41582371104100CA2FE4 /* CDSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FB414B2371104100CA2FE4 /* CDSlideView.m */; };
+		04FB41592371104100CA2FE4 /* CDTitleTabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FB414F2371104100CA2FE4 /* CDTitleTabCollectionViewCell.m */; };
+		04FB415B2371104100CA2FE4 /* CDTitleTabCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41542371104100CA2FE4 /* CDTitleTabCollectionView.m */; };
+		04FB415C2371104100CA2FE4 /* CDTitleTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41552371104100CA2FE4 /* CDTitleTabView.m */; };
+		04FB415D2371104100CA2FE4 /* CDTitleSlideWrapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41572371104100CA2FE4 /* CDTitleSlideWrapView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -43,18 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04BFA6682370254800EB0047 /* CDSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSlideView.m; sourceTree = "<group>"; };
-		04BFA6692370254800EB0047 /* CDSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSlideView.h; sourceTree = "<group>"; };
-		04BFA66A2370254800EB0047 /* CDTitleSlideWrapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleSlideWrapView.h; sourceTree = "<group>"; };
-		04BFA66C2370254800EB0047 /* CDTitleTabCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabCollectionViewCell.m; sourceTree = "<group>"; };
-		04BFA66D2370254800EB0047 /* CDTitleTabCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabCollectionView.h; sourceTree = "<group>"; };
-		04BFA66E2370254800EB0047 /* CDTitleTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabView.h; sourceTree = "<group>"; };
-		04BFA66F2370254800EB0047 /* CDTitleTabViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabViewModel.m; sourceTree = "<group>"; };
-		04BFA6702370254800EB0047 /* CDTitleTabCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabCollectionViewCell.h; sourceTree = "<group>"; };
-		04BFA6712370254800EB0047 /* CDTitleTabCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabCollectionView.m; sourceTree = "<group>"; };
-		04BFA6722370254800EB0047 /* CDTitleTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabView.m; sourceTree = "<group>"; };
-		04BFA6732370254800EB0047 /* CDTitleTabViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabViewModel.h; sourceTree = "<group>"; };
-		04BFA6742370254800EB0047 /* CDTitleSlideWrapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleSlideWrapView.m; sourceTree = "<group>"; };
+		04FB414B2371104100CA2FE4 /* CDSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSlideView.m; sourceTree = "<group>"; };
+		04FB414C2371104100CA2FE4 /* CDSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSlideView.h; sourceTree = "<group>"; };
+		04FB414D2371104100CA2FE4 /* CDTitleSlideWrapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleSlideWrapView.h; sourceTree = "<group>"; };
+		04FB414F2371104100CA2FE4 /* CDTitleTabCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabCollectionViewCell.m; sourceTree = "<group>"; };
+		04FB41502371104100CA2FE4 /* CDTitleTabCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabCollectionView.h; sourceTree = "<group>"; };
+		04FB41512371104100CA2FE4 /* CDTitleTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabView.h; sourceTree = "<group>"; };
+		04FB41532371104100CA2FE4 /* CDTitleTabCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTitleTabCollectionViewCell.h; sourceTree = "<group>"; };
+		04FB41542371104100CA2FE4 /* CDTitleTabCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabCollectionView.m; sourceTree = "<group>"; };
+		04FB41552371104100CA2FE4 /* CDTitleTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleTabView.m; sourceTree = "<group>"; };
+		04FB41572371104100CA2FE4 /* CDTitleSlideWrapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTitleSlideWrapView.m; sourceTree = "<group>"; };
 		203151F1E5FD72DBEF32D13A /* Pods_CDTitleSlideWrapView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDTitleSlideWrapView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DB308329471041F59B7512 /* Pods-CDTitleSlideWrapView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDTitleSlideWrapView_Example.debug.xcconfig"; path = "Target Support Files/Pods-CDTitleSlideWrapView_Example/Pods-CDTitleSlideWrapView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		24853779BD33C5CBC8E87C11 /* Pods-CDTitleSlideWrapView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDTitleSlideWrapView_Example.release.xcconfig"; path = "Target Support Files/Pods-CDTitleSlideWrapView_Example/Pods-CDTitleSlideWrapView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,38 +110,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04BFA6662370254800EB0047 /* CDTitleSlideWrapView */ = {
+		04FB41492371104100CA2FE4 /* CDTitleSlideWrapView */ = {
 			isa = PBXGroup;
 			children = (
-				04BFA6672370254800EB0047 /* CDSlideView */,
-				04BFA66A2370254800EB0047 /* CDTitleSlideWrapView.h */,
-				04BFA6742370254800EB0047 /* CDTitleSlideWrapView.m */,
-				04BFA66B2370254800EB0047 /* CDTitleTabView */,
+				04FB414A2371104100CA2FE4 /* CDSlideView */,
+				04FB414D2371104100CA2FE4 /* CDTitleSlideWrapView.h */,
+				04FB41572371104100CA2FE4 /* CDTitleSlideWrapView.m */,
+				04FB414E2371104100CA2FE4 /* CDTitleTabView */,
 			);
 			name = CDTitleSlideWrapView;
-			path = ../../../../../temp/CDTitleSlideWrapView;
+			path = ../CDTitleSlideWrapView/Classes/CDTitleSlideWrapView;
 			sourceTree = "<group>";
 		};
-		04BFA6672370254800EB0047 /* CDSlideView */ = {
+		04FB414A2371104100CA2FE4 /* CDSlideView */ = {
 			isa = PBXGroup;
 			children = (
-				04BFA6692370254800EB0047 /* CDSlideView.h */,
-				04BFA6682370254800EB0047 /* CDSlideView.m */,
+				04FB414C2371104100CA2FE4 /* CDSlideView.h */,
+				04FB414B2371104100CA2FE4 /* CDSlideView.m */,
 			);
 			path = CDSlideView;
 			sourceTree = "<group>";
 		};
-		04BFA66B2370254800EB0047 /* CDTitleTabView */ = {
+		04FB414E2371104100CA2FE4 /* CDTitleTabView */ = {
 			isa = PBXGroup;
 			children = (
-				04BFA66D2370254800EB0047 /* CDTitleTabCollectionView.h */,
-				04BFA6712370254800EB0047 /* CDTitleTabCollectionView.m */,
-				04BFA6702370254800EB0047 /* CDTitleTabCollectionViewCell.h */,
-				04BFA66C2370254800EB0047 /* CDTitleTabCollectionViewCell.m */,
-				04BFA66E2370254800EB0047 /* CDTitleTabView.h */,
-				04BFA6722370254800EB0047 /* CDTitleTabView.m */,
-				04BFA6732370254800EB0047 /* CDTitleTabViewModel.h */,
-				04BFA66F2370254800EB0047 /* CDTitleTabViewModel.m */,
+				04FB41502371104100CA2FE4 /* CDTitleTabCollectionView.h */,
+				04FB41542371104100CA2FE4 /* CDTitleTabCollectionView.m */,
+				04FB41532371104100CA2FE4 /* CDTitleTabCollectionViewCell.h */,
+				04FB414F2371104100CA2FE4 /* CDTitleTabCollectionViewCell.m */,
+				04FB41512371104100CA2FE4 /* CDTitleTabView.h */,
+				04FB41552371104100CA2FE4 /* CDTitleTabView.m */,
 			);
 			path = CDTitleTabView;
 			sourceTree = "<group>";
@@ -232,7 +227,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				04BFA6662370254800EB0047 /* CDTitleSlideWrapView */,
+				04FB41492371104100CA2FE4 /* CDTitleSlideWrapView */,
 				9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */,
 				3F77C9DCC0424CAAAE57E7D0 /* README.md */,
 				A4095673D537AEE5DC0FF297 /* LICENSE */,
@@ -424,14 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
-				04BFA6762370254800EB0047 /* CDTitleTabCollectionViewCell.m in Sources */,
-				04BFA67A2370254800EB0047 /* CDTitleSlideWrapView.m in Sources */,
+				04FB41592371104100CA2FE4 /* CDTitleTabCollectionViewCell.m in Sources */,
+				04FB415D2371104100CA2FE4 /* CDTitleSlideWrapView.m in Sources */,
 				6003F5A7195388D20070C39A /* LYViewController.m in Sources */,
-				04BFA6782370254800EB0047 /* CDTitleTabCollectionView.m in Sources */,
+				04FB415B2371104100CA2FE4 /* CDTitleTabCollectionView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				04BFA6772370254800EB0047 /* CDTitleTabViewModel.m in Sources */,
-				04BFA6792370254800EB0047 /* CDTitleTabView.m in Sources */,
-				04BFA6752370254800EB0047 /* CDSlideView.m in Sources */,
+				04FB415C2371104100CA2FE4 /* CDTitleTabView.m in Sources */,
+				04FB41582371104100CA2FE4 /* CDSlideView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
