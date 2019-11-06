@@ -6,9 +6,22 @@
 [![Platform](https://img.shields.io/cocoapods/p/CDTitleSlideWrapView.svg?style=flat)](https://cocoapods.org/pods/CDTitleSlideWrapView)
 
 ## Example
+```
+CDTitleSlideWrapView *slideWrapView = [CDTitleSlideWrapView new];
+slideWrapView.frame = self.view.bounds;
+[self.view addSubview:slideWrapView];
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+NSArray *rawTitles = @[@"title1",@"title2",@"title3"];
+slideWrapView.items = rawTitles;
 
+UIViewController *vc1 = [UIViewController new];
+vc1.view.backgroundColor = [UIColor whiteColor];
+UIViewController *vc2 = [UIViewController new];
+vc2.view.backgroundColor = [UIColor whiteColor];
+UIViewController *vc3 = [UIViewController new];
+vc3.view.backgroundColor = [UIColor whiteColor];
+slideWrapView.viewControllers = @[vc1,vc2,vc3];
+```
 ## Requirements
 
 ## Installation
