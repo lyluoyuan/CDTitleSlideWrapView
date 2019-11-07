@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/CDTitleSlideWrapView.svg?style=flat)](https://cocoapods.org/pods/CDTitleSlideWrapView)
 [![Platform](https://img.shields.io/cocoapods/p/CDTitleSlideWrapView.svg?style=flat)](https://cocoapods.org/pods/CDTitleSlideWrapView)
 
-
+![image](https://raw.githubusercontent.com/lyluoyuan/CDTitleSlideWrapView/master/backup/demo.gif)
 
 ## Example
 ```
@@ -19,9 +19,9 @@ slideWrapView.items = rawTitles;
 UIViewController *vc1 = [UIViewController new];
 vc1.view.backgroundColor = [UIColor whiteColor];
 UIViewController *vc2 = [UIViewController new];
-vc2.view.backgroundColor = [UIColor whiteColor];
+vc2.view.backgroundColor = [UIColor yellowColor];
 UIViewController *vc3 = [UIViewController new];
-vc3.view.backgroundColor = [UIColor whiteColor];
+vc3.view.backgroundColor = [UIColor blueColor];
 slideWrapView.viewControllers = @[vc1,vc2,vc3];
 ```
 ## Requirements
