@@ -29,9 +29,9 @@
     UIViewController *vc1 = [UIViewController new];
     vc1.view.backgroundColor = [UIColor whiteColor];
     UIViewController *vc2 = [UIViewController new];
-    vc2.view.backgroundColor = [UIColor whiteColor];
+    vc2.view.backgroundColor = [UIColor yellowColor];
     UIViewController *vc3 = [UIViewController new];
-    vc3.view.backgroundColor = [UIColor whiteColor];
+    vc3.view.backgroundColor = [UIColor blueColor];
     slideWrapView.viewControllers = @[vc1,vc2,vc3];
     
 ////    取消注释试试看
