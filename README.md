@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/CDTitleSlideWrapView.svg?style=flat)](https://cocoapods.org/pods/CDTitleSlideWrapView)
 
 ![image](https://raw.githubusercontent.com/lyluoyuan/CDTitleSlideWrapView/master/backup/demo.gif)
+<img src="https://raw.githubusercontent.com/lyluoyuan/CDTitleSlideWrapView/master/backup/demo.gif"  width = "112" height = "200" div align=left />
 
 ## Example
 ```
