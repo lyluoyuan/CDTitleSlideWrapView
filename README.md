@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/CDTitleSlideWrapView.svg?style=flat)](https://cocoapods.org/pods/CDTitleSlideWrapView)
 [![Platform](https://img.shields.io/cocoapods/p/CDTitleSlideWrapView.svg?style=flat)](https://cocoapods.org/pods/CDTitleSlideWrapView)
 
-
-<img src="https://raw.githubusercontent.com/lyluoyuan/CDTitleSlideWrapView/master/backup/demo.gif"  width = "169" height = "300"  align=left />     
-<br />    
+##
+<img src="https://raw.githubusercontent.com/lyluoyuan/CDTitleSlideWrapView/master/backup/demo.gif"  width="169" height="300">     
+   
 
 ## Example
 ```
