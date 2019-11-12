@@ -20,6 +20,7 @@
         if (self) {
             self.titleTabCollectionView = [CDTitleTabCollectionView new];
             [self addSubview:self.titleTabCollectionView];
+            
 //            [self.titleTabCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
 //                make.edges.equalTo(self);
 //            }];
@@ -35,6 +36,9 @@
                 if (weakSelf.didSelect) {
                     weakSelf.didSelect(selectIndex);
                 }
+            };
+            self.titleTabCollectionView.didScroll = ^{
+                [weakSelf updateIndicatorWithSelectIndexProgress:weakSelf.selectIndex];
             };
         }
         return self;
@@ -57,7 +61,9 @@
 //    [self updateIndicatorFrame];
     self.titleTabCollectionView.selectIndex = selectIndex;
     [self.titleTabCollectionView reloadData];
+    [self.titleTabCollectionView scrollToSelectIndexIfNeeded];
 }
+
 -(void)updateIndicatorFrame{
     CGRect cellFrame = [self currentCellFrame];
     self.indicatorLine.frame = CGRectMake(cellFrame.origin.x, self.bounds.size.height-2, cellFrame.size.width, 2);
@@ -67,6 +73,9 @@
     return [self cellFrameWithIndexPath:[NSIndexPath indexPathForItem:self.selectIndex inSection:0]];
 }
 -(CGRect)cellFrameWithIndexPath:(NSIndexPath *)indexPath{
+    if (self.items.count == 0) {
+        return CGRectZero;
+    }
     UICollectionViewCell *cell = [self.titleTabCollectionView collectionView:self.titleTabCollectionView cellForItemAtIndexPath:indexPath];
     CGRect cellFrame = cell.frame;
     return cellFrame;
@@ -88,7 +97,7 @@
     CGFloat k = toBeIndex-lastIndex == 0 ? 0 :(cellFrame.size.width-lastCellFrame.size.width)/(toBeIndex-lastIndex);
     CGFloat b = lastCellFrame.size.width-k*lastIndex;
     CGFloat currentIndexWidth = k*selectIndexProgress+b;
-    self.indicatorLine.frame = CGRectMake(scale*cellFrame.origin.x, self.bounds.size.height-2, currentIndexWidth, 2);
+    self.indicatorLine.frame = CGRectMake(scale*cellFrame.origin.x-self.titleTabCollectionView.contentOffset.x, self.bounds.size.height-2, currentIndexWidth, 2);
 
 //    CGFloat widthScale = currentIndexWidth/lastCellFrame.size.width;
 //    self.indicatorLine.transform = CGAffineTransformScale(CGAffineTransformIdentity, widthScale, 1);

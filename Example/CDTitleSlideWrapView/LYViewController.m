@@ -23,7 +23,15 @@
     slideWrapView.frame = self.view.bounds;
     [self.view addSubview:slideWrapView];
     
-    NSArray *rawTitles = @[@"title1",@"title2",@"title3"];
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)slideWrapView.titleTabView.titleTabCollectionView.collectionViewLayout;
+    flowLayout.minimumInteritemSpacing = 12;
+    slideWrapView.titleTabView.titleTabCollectionView.itemSizeBlock = ^CGSize(CDTitleTabCollectionView * _Nonnull titleTabCollectionView, NSIndexPath * _Nonnull indexPath, id _Nonnull title) {
+        CGFloat width = [title boundingRectWithSize:CGSizeMake(375, 18) options:(NSStringDrawingUsesLineFragmentOrigin) attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size.width;
+        
+        return CGSizeMake(width+16+11, titleTabCollectionView.bounds.size.height);
+    };
+    
+    NSArray *rawTitles = @[@"title1",@"title2",@"title3",@"title4",@"title5",@"title6"];
     slideWrapView.items = rawTitles;
 
     UIViewController *vc1 = [UIViewController new];
@@ -32,7 +40,13 @@
     vc2.view.backgroundColor = [UIColor yellowColor];
     UIViewController *vc3 = [UIViewController new];
     vc3.view.backgroundColor = [UIColor blueColor];
-    slideWrapView.viewControllers = @[vc1,vc2,vc3];
+    UIViewController *vc4 = [UIViewController new];
+    vc4.view.backgroundColor = [UIColor orangeColor];
+    UIViewController *vc5 = [UIViewController new];
+    vc5.view.backgroundColor = [UIColor lightGrayColor];
+    UIViewController *vc6 = [UIViewController new];
+    vc6.view.backgroundColor = [UIColor cyanColor];
+    slideWrapView.viewControllers = @[vc1,vc2,vc3,vc4,vc5,vc6];
     
 ////    取消注释试试看
 //    slideWrapView.titleTabView.indicatorColor = [UIColor orangeColor];

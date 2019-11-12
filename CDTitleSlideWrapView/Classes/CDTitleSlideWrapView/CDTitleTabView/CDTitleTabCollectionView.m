@@ -60,7 +60,11 @@
     
     return self.itemSizeBlock ? self.itemSizeBlock(self, indexPath, self.items[indexPath.item]) : CGSizeMake(collectionView.bounds.size.width/MAX(self.items.count, 1), collectionView.bounds.size.height);
 }
-
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.didScroll) {
+        self.didScroll();
+    }
+}
 - (void)setActiveColor:(UIColor *)activeColor{
     _activeColor = activeColor;
     [self reloadData];
@@ -68,5 +72,12 @@
 - (void)setInActiveColor:(UIColor *)inActiveColor{
     _inActiveColor = inActiveColor;
     [self reloadData];
+}
+-(void)scrollToSelectIndexIfNeeded{
+    [self layoutIfNeeded];
+    NSIndexPath *currentIndexPath = [NSIndexPath indexPathForItem:self.selectIndex inSection:0];
+    if (![self.indexPathsForVisibleItems containsObject:currentIndexPath]) {
+        [self scrollToItemAtIndexPath:currentIndexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+    }
 }
 @end
