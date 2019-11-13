@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)CDTitleTabView *titleTabView;
 @property(nonatomic,strong)CDSlideView *slideView;
 @property(nonatomic,assign,readonly)NSInteger currentIndex;
-@property(nonatomic,strong)NSArray *items;
+@property(nonatomic,strong)NSMutableArray *items;
 @property (nonatomic, strong) NSArray *viewControllers;
 @property(nonatomic,strong)void(^willAppearBlock)(NSInteger index,CDTitleSlideWrapView *titleSlideWrapView);
 -(void)reloadData;
