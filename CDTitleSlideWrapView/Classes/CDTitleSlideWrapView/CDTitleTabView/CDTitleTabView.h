@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)NSInteger selectIndex;
 @property(nonatomic,strong)CDTitleTabCollectionView *titleTabCollectionView;
 @property(nonatomic,strong)void(^didSelect)(NSInteger selectIndex);
-@property(nonatomic,strong)NSArray *items;
+@property(nonatomic,strong)NSMutableArray *items;
 
 -(void)updateIndicatorWithSelectIndexProgress:(CGFloat)selectIndexProgress;
 -(void)reloadData;

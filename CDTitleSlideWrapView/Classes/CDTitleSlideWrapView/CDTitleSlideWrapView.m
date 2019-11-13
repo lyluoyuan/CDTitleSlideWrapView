@@ -53,7 +53,7 @@
         }
         return self;
     }
--(void)setItems:(NSArray *)items{
+-(void)setItems:(NSMutableArray *)items{
     _items = items;
     self.titleTabView.items = items;
 }

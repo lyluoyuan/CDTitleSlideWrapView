@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef CGSize(^CDTitleTabSizeBlock)(CDTitleTabCollectionView *titleTabCollectionView, NSIndexPath *indexPath, id title);
 typedef void(^CDTitleTabCellBlock)(CDTitleTabCollectionViewCell *cell);
 @interface CDTitleTabCollectionView : UICollectionView<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
-@property(nonatomic,strong)NSArray *items;
+@property(nonatomic,strong)NSMutableArray *items;
 @property(nonatomic,assign)NSInteger selectIndex;
 @property(nonatomic,strong)void(^didSelect)(NSInteger selectIndex);
 

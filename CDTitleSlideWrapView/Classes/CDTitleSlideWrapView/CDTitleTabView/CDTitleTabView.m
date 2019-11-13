@@ -51,7 +51,7 @@
         self.isFirstLayout = YES;
     }
 }
--(void)setItems:(NSArray *)items{
+-(void)setItems:(NSMutableArray *)items{
     _items = items;
     self.titleTabCollectionView.items = items;
     self.selectIndex = 0;
@@ -102,7 +102,10 @@
 //    CGFloat widthScale = currentIndexWidth/lastCellFrame.size.width;
 //    self.indicatorLine.transform = CGAffineTransformScale(CGAffineTransformIdentity, widthScale, 1);
 }
-
+-(void)setIndicatorColor:(UIColor *)indicatorColor{
+    _indicatorColor = indicatorColor;
+    self.indicatorLine.backgroundColor = indicatorColor;
+}
 -(void)reloadData{
     [self updateIndicatorWithSelectIndexProgress:self.selectIndex];
     [self.titleTabCollectionView reloadData];
