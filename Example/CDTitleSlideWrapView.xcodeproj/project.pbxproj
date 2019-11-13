@@ -79,7 +79,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D72EBBDC8AAC20E0DEDA5A6 /* Pods_CDTitleSlideWrapView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDTitleSlideWrapView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CDTitleSlideWrapView.podspec; path = ../CDTitleSlideWrapView.podspec; sourceTree = "<group>"; };
+		9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CDTitleSlideWrapView.podspec; path = ../CDTitleSlideWrapView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4095673D537AEE5DC0FF297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D444E20DAE440B0D8E036BD4 /* Pods-CDTitleSlideWrapView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDTitleSlideWrapView_Tests.release.xcconfig"; path = "Target Support Files/Pods-CDTitleSlideWrapView_Tests/Pods-CDTitleSlideWrapView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
