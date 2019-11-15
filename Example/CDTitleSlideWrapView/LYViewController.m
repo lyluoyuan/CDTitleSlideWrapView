@@ -31,7 +31,7 @@
         return CGSizeMake(width+16+11, titleTabCollectionView.bounds.size.height);
     };
     
-    NSArray *rawTitles = @[@"title1",@"title2",@"title3",@"title4",@"title5",@"title6"];
+    NSArray *rawTitles = @[@"title1",@"title2",@"title3",@"title4",@"title5",@"title6",@"title7"];
     slideWrapView.items = rawTitles;
 
     UIViewController *vc1 = [UIViewController new];
@@ -46,7 +46,9 @@
     vc5.view.backgroundColor = [UIColor lightGrayColor];
     UIViewController *vc6 = [UIViewController new];
     vc6.view.backgroundColor = [UIColor cyanColor];
-    slideWrapView.viewControllers = @[vc1,vc2,vc3,vc4,vc5,vc6];
+    UIViewController *vc7 = [UIViewController new];
+    vc7.view.backgroundColor = [UIColor brownColor];
+    slideWrapView.viewControllers = @[vc1,vc2,vc3,vc4,vc5,vc6,vc7];
     
 ////    取消注释试试看
 //    slideWrapView.titleTabView.indicatorColor = [UIColor orangeColor];
