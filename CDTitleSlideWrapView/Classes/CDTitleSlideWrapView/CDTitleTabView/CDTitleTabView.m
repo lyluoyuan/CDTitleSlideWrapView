@@ -18,6 +18,7 @@
     {
         self = [super init];
         if (self) {
+            self.indicatorWidth = -1;
             self.titleTabCollectionView = [CDTitleTabCollectionView new];
             [self addSubview:self.titleTabCollectionView];
             
@@ -66,9 +67,11 @@
 
 -(void)updateIndicatorFrame{
     CGRect cellFrame = [self currentCellFrame];
-    self.indicatorLine.frame = CGRectMake(cellFrame.origin.x, self.bounds.size.height-2, cellFrame.size.width, 2);
+    CGFloat validIndicatorWidth = self.indicatorWidth < 0 ? cellFrame.size.width : self.indicatorWidth;
+    self.indicatorLine.frame = CGRectMake(cellFrame.origin.x+(cellFrame.size.width-validIndicatorWidth)/2, self.bounds.size.height-2, validIndicatorWidth, 2);
 //    self.indicatorLine.frame = CGRectMake(self.selectIndex*self.bounds.size.width/MAX(1, self.items.count), self.bounds.size.height-2, self.bounds.size.width/MAX(1, self.items.count), 2);
 }
+
 -(CGRect)currentCellFrame{
     return [self cellFrameWithIndexPath:[NSIndexPath indexPathForItem:self.selectIndex inSection:0]];
 }
@@ -96,8 +99,9 @@
     
     CGFloat k = toBeIndex-lastIndex == 0 ? 0 :(cellFrame.size.width-lastCellFrame.size.width)/(toBeIndex-lastIndex);
     CGFloat b = lastCellFrame.size.width-k*lastIndex;
-    CGFloat currentIndexWidth = k*selectIndexProgress+b;
-    self.indicatorLine.frame = CGRectMake(scale*cellFrame.origin.x-self.titleTabCollectionView.contentOffset.x, self.bounds.size.height-2, currentIndexWidth, 2);
+    CGFloat currentCellWidth = k*selectIndexProgress+b;
+    CGFloat currentIndexWidth = self.indicatorWidth < 0 ? currentCellWidth : self.indicatorWidth;
+    self.indicatorLine.frame = CGRectMake(scale*cellFrame.origin.x-self.titleTabCollectionView.contentOffset.x+(currentCellWidth-currentIndexWidth)/2, self.bounds.size.height-2, currentIndexWidth, 2);
 
 //    CGFloat widthScale = currentIndexWidth/lastCellFrame.size.width;
 //    self.indicatorLine.transform = CGAffineTransformScale(CGAffineTransformIdentity, widthScale, 1);

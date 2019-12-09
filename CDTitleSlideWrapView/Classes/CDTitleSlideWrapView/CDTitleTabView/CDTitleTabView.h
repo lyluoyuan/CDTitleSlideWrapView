@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CDTitleTabView : UIView
 @property(nonatomic,strong)UIColor *indicatorColor;
-
+@property(nonatomic,assign)CGFloat indicatorWidth;
 
 @property(nonatomic,assign)NSInteger selectIndex;
 @property(nonatomic,strong)CDTitleTabCollectionView *titleTabCollectionView;
