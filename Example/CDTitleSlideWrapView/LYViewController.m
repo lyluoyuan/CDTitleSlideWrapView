@@ -49,6 +49,9 @@
     UIViewController *vc7 = [UIViewController new];
     vc7.view.backgroundColor = [UIColor brownColor];
     slideWrapView.viewControllers = @[vc1,vc2,vc3,vc4,vc5,vc6,vc7];
+    slideWrapView.titleTabView.titleTabCollectionView.cellBlock = ^(CDTitleTabCollectionViewCell * _Nonnull cell) {
+        cell.titleLabel.font = [UIFont boldSystemFontOfSize:15];
+    };
     
 ////    取消注释试试看
 //    slideWrapView.titleTabView.indicatorColor = [UIColor orangeColor];

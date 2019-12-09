@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray *viewControllers;
 @property(nonatomic,strong)void(^willAppearBlock)(NSInteger index,CDTitleSlideWrapView *titleSlideWrapView);
 -(void)reloadData;
+
+@property(nonatomic,assign)BOOL autoHideTabTitle;
 @end
 
 NS_ASSUME_NONNULL_END

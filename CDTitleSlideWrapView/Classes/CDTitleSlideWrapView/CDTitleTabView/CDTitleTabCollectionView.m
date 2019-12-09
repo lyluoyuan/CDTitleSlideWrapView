@@ -44,9 +44,9 @@
     cell.inActiveColor = self.inActiveColor;
     cell.isSelected = indexPath.item == self.selectIndex;
     cell.title = self.items[indexPath.item];
-//    if (self.cellBlock) {
-//        self.cellBlock(cell);
-//    }
+    if (self.cellBlock) {
+        self.cellBlock(cell);
+    }
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{

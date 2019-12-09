@@ -19,7 +19,7 @@ typedef void(^CDTitleTabCellBlock)(CDTitleTabCollectionViewCell *cell);
 @property(nonatomic,strong)void(^didSelect)(NSInteger selectIndex);
 
 @property(nonatomic,strong)CDTitleTabSizeBlock itemSizeBlock;
-//@property(nonatomic,strong)CDTitleTabCellBlock cellBlock;
+@property(nonatomic,strong)CDTitleTabCellBlock cellBlock;
 @property(nonatomic,strong)UIColor *activeColor;
 @property(nonatomic,strong)UIColor *inActiveColor;
 @property(nonatomic,strong)void(^didScroll)(void);
