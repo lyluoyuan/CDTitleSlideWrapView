@@ -67,4 +67,10 @@
 -(NSInteger)currentIndex{
     return self.titleTabView.selectIndex;
 }
+
+-(void)scrollToIndex:(NSInteger)index{
+    self.titleTabView.selectIndex = 1;
+    self.slideView.selectIndex = 1;
+    [self.slideView updateOffsetWithIndex];
+}
 @end

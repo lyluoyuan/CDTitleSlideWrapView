@@ -9,7 +9,7 @@
 #import "CDTitleTabView.h"
 
 @interface CDTitleTabView()
-@property(nonatomic,strong)UIView *indicatorLine;
+
 @property(nonatomic,assign)BOOL isFirstLayout;
 @end
 @implementation CDTitleTabView

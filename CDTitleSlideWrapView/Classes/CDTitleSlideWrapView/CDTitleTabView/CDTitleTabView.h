@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)void(^didSelect)(NSInteger selectIndex);
 @property(nonatomic,strong)NSMutableArray *items;
 
+@property(nonatomic,strong)UIView *indicatorLine;
 -(void)updateIndicatorWithSelectIndexProgress:(CGFloat)selectIndexProgress;
 -(void)reloadData;
 @end
