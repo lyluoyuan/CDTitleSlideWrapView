@@ -43,13 +43,15 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSInteger rawIndex = self.selectIndex;
     self.selectIndex = (NSUInteger)(round(scrollView.contentOffset.x/scrollView.bounds.size.width));
-    if (rawIndex != self.selectIndex && self.indexChangeBlock) {
-        self.indexChangeBlock(self.selectIndex);
-    }
+    
     
     CGFloat progress = scrollView.contentOffset.x/self.bounds.size.width;
     if (self.didScroll) {
         self.didScroll(self.selectIndex,progress);
+    }
+    
+    if (rawIndex != self.selectIndex && self.indexChangeBlock) {
+        self.indexChangeBlock(self.selectIndex);
     }
     
     [self addVCViewIfNeeded];
