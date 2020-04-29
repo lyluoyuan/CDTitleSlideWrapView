@@ -66,9 +66,10 @@
 }
 
 -(void)updateIndicatorFrame{
-    CGRect cellFrame = [self currentCellFrame];
-    CGFloat validIndicatorWidth = self.indicatorWidth < 0 ? cellFrame.size.width : self.indicatorWidth;
-    self.indicatorLine.frame = CGRectMake(cellFrame.origin.x+(cellFrame.size.width-validIndicatorWidth)/2, self.bounds.size.height-2, validIndicatorWidth, 2);
+//    CGRect cellFrame = [self currentCellFrame];
+//    CGFloat validIndicatorWidth = self.indicatorWidth < 0 ? cellFrame.size.width : self.indicatorWidth;
+//    self.indicatorLine.frame = CGRectMake(cellFrame.origin.x+(cellFrame.size.width-validIndicatorWidth)/2, self.bounds.size.height-2, validIndicatorWidth, 2);
+    [self updateIndicatorWithSelectIndexProgress:self.selectIndex];
 //    self.indicatorLine.frame = CGRectMake(self.selectIndex*self.bounds.size.width/MAX(1, self.items.count), self.bounds.size.height-2, self.bounds.size.width/MAX(1, self.items.count), 2);
 }
 
