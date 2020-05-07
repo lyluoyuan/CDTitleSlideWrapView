@@ -36,7 +36,9 @@
         [subview removeFromSuperview];
     }
     self.scrollView.contentSize = CGSizeMake(self.bounds.size.width*viewControllers.count, self.scrollView.bounds.size.height);
-    
+    if (self.indexChangeBlock) {
+        self.indexChangeBlock(self.selectIndex);
+    }
     [self addVCViewIfNeeded];
 }
 
