@@ -60,6 +60,9 @@
 -(void)setViewControllers:(NSArray *)viewControllers{
     _viewControllers = viewControllers;
     self.slideView.viewControllers = viewControllers;
+    if (self.willAppearBlock) {
+        self.willAppearBlock(0, self);
+    }
 }
 -(void)reloadData{
     [self.titleTabView reloadData];

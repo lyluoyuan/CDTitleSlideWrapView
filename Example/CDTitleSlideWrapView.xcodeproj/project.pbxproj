@@ -113,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041713BC24920A1F00B3145C /* otherClass */ = {
+			isa = PBXGroup;
+			children = (
+				044D38FB239E24F0003675B6 /* UIViewController+CDSlide.h */,
+				044D38FC239E24F0003675B6 /* UIViewController+CDSlide.m */,
+			);
+			path = otherClass;
+			sourceTree = "<group>";
+		};
 		04FB41492371104100CA2FE4 /* CDTitleSlideWrapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +129,6 @@
 				04FB414D2371104100CA2FE4 /* CDTitleSlideWrapView.h */,
 				04FB41572371104100CA2FE4 /* CDTitleSlideWrapView.m */,
 				04FB414E2371104100CA2FE4 /* CDTitleTabView */,
-				044D38FB239E24F0003675B6 /* UIViewController+CDSlide.h */,
-				044D38FC239E24F0003675B6 /* UIViewController+CDSlide.m */,
 			);
 			name = CDTitleSlideWrapView;
 			path = ../CDTitleSlideWrapView/Classes/CDTitleSlideWrapView;
@@ -232,6 +239,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				041713BC24920A1F00B3145C /* otherClass */,
 				04FB41492371104100CA2FE4 /* CDTitleSlideWrapView */,
 				9D3B48475E68FBC99FFF2B3A /* CDTitleSlideWrapView.podspec */,
 				3F77C9DCC0424CAAAE57E7D0 /* README.md */,
@@ -315,6 +323,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
