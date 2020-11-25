@@ -23,11 +23,11 @@
             self.titleLabel.textColor = [UIColor darkGrayColor];
             self.titleLabel.textAlignment = NSTextAlignmentCenter;
 
-            [self addSubview:self.titleLabel];
+            [self.contentView addSubview:self.titleLabel];
             [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.bottom.equalTo(self);
-                make.leading.equalTo(self).with.offset(5);
-                make.trailing.equalTo(self).with.offset(-5);
+                make.top.bottom.equalTo(self.contentView);
+                make.leading.equalTo(self.contentView).with.offset(5);
+                make.trailing.equalTo(self.contentView).with.offset(-5);
             }];
             self.titleLabel.adjustsFontSizeToFitWidth = YES;
         }

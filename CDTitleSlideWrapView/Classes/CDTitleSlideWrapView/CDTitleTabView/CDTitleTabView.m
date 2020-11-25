@@ -107,12 +107,30 @@
 //    CGFloat widthScale = currentIndexWidth/lastCellFrame.size.width;
 //    self.indicatorLine.transform = CGAffineTransformScale(CGAffineTransformIdentity, widthScale, 1);
 }
--(void)setIndicatorColor:(UIColor *)indicatorColor{
-    _indicatorColor = indicatorColor;
-    self.indicatorLine.backgroundColor = indicatorColor;
-}
 -(void)reloadData{
-    [self updateIndicatorWithSelectIndexProgress:self.selectIndex];
+    
     [self.titleTabCollectionView reloadData];
+    [self allPerformBatchUpdatesCallback:^{
+        [self updateIndicatorWithSelectIndexProgress:self.selectIndex];
+    }];
+    
+}
+-(void)allPerformBatchUpdatesCallback:(void(^)(void))callback{
+    if (@available(iOS 11.0, *)) {
+//        __weak typeof(self) weakSelf = self;
+        [self.titleTabCollectionView performBatchUpdates:nil completion:^(BOOL finished) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                if (callback) {
+                    callback();
+                }
+            });
+        }];
+    } else {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (callback) {
+                callback();
+            }
+        });
+    }
 }
 @end
