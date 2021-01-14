@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CDSlideView : UIView
+@property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) NSArray *viewControllers;
 @property (nonatomic, assign) NSInteger selectIndex;
 @property(nonatomic,strong)void(^didScroll)(NSInteger index,CGFloat progressIndex);
