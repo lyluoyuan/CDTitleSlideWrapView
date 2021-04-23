@@ -21,6 +21,7 @@
     
     CDTitleSlideWrapView *slideWrapView = [CDTitleSlideWrapView new];
     slideWrapView.frame = self.view.bounds;
+    slideWrapView.titleTabView.indicatorColor = [UIColor redColor];
     [self.view addSubview:slideWrapView];
     
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)slideWrapView.titleTabView.titleTabCollectionView.collectionViewLayout;

@@ -45,6 +45,10 @@
         return self;
     }
 
+-(void)setIndicatorColor:(UIColor *)indicatorColor{
+    _indicatorColor = indicatorColor;
+    self.indicatorLine.backgroundColor = indicatorColor;
+}
 -(void)layoutSubviews{
     self.titleTabCollectionView.frame = self.bounds;
     if (!self.isFirstLayout) {
