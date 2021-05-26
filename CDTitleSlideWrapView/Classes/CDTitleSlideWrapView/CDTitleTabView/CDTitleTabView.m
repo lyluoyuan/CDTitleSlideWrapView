@@ -114,8 +114,9 @@
 -(void)reloadData{
     
     [self.titleTabCollectionView reloadData];
+    __weak typeof(self) weakSelf = self;
     [self allPerformBatchUpdatesCallback:^{
-        [self updateIndicatorWithSelectIndexProgress:self.selectIndex];
+        [weakSelf updateIndicatorWithSelectIndexProgress:weakSelf.selectIndex];
     }];
     
 }
