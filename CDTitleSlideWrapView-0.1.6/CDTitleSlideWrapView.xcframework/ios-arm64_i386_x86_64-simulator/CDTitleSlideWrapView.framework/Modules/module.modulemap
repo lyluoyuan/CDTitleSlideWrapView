@@ -1,0 +1,6 @@
+framework module CDTitleSlideWrapView {
+  umbrella header "CDTitleSlideWrapView-umbrella.h"
+
+  export *
+  module * { export * }
+}
