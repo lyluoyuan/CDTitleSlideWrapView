@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CDTitleSlideWrapView.xcframework/ios-arm64_i386_x86_64-simulator/**/*'
+  s.source_files = 'CDTitleSlideWrapView.framework'
   
   # s.resource_bundles = {
   #   'CDTitleSlideWrapView' => ['CDTitleSlideWrapView/Assets/*.png']
