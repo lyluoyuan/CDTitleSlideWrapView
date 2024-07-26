@@ -60,10 +60,19 @@
 }
 -(void)addVCViewIfNeeded{
     if (_selectIndex < self.viewControllers.count) {
-        UIViewController *vc = self.viewControllers[_selectIndex];
-        if (!vc.view.superview) {
-            vc.view.frame = CGRectMake(_selectIndex*self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
-            [self.scrollView addSubview:vc.view];
+        id page = self.viewControllers[_selectIndex];
+        if ([page isKindOfClass:[UIViewController class]]) {
+            UIViewController *vc = page;
+            if (!vc.view.superview) {
+                vc.view.frame = CGRectMake(_selectIndex*self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+                [self.scrollView addSubview:vc.view];
+            }
+        }else if([page isKindOfClass:[UIView class]]){
+            UIView *pageView = page;
+            if (!pageView.superview) {
+                pageView.frame = CGRectMake(_selectIndex*self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+                [self.scrollView addSubview:pageView];
+            }
         }
     }
 }

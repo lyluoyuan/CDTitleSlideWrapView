@@ -311,7 +311,7 @@
 				ORGANIZATIONNAME = "lyluoyuan@126.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = B26F745XHV;
+						DevelopmentTeam = 8GCH357V29;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -568,7 +568,7 @@
 			baseConfigurationReference = 21DB308329471041F59B7512 /* Pods-CDTitleSlideWrapView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B26F745XHV;
+				DEVELOPMENT_TEAM = 8GCH357V29;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTitleSlideWrapView/CDTitleSlideWrapView-Prefix.pch";
 				INFOPLIST_FILE = "CDTitleSlideWrapView/CDTitleSlideWrapView-Info.plist";
@@ -585,7 +585,7 @@
 			baseConfigurationReference = 24853779BD33C5CBC8E87C11 /* Pods-CDTitleSlideWrapView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B26F745XHV;
+				DEVELOPMENT_TEAM = 8GCH357V29;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTitleSlideWrapView/CDTitleSlideWrapView-Prefix.pch";
 				INFOPLIST_FILE = "CDTitleSlideWrapView/CDTitleSlideWrapView-Info.plist";
