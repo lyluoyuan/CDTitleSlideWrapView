@@ -84,7 +84,7 @@
     if (self.items.count == 0) {
         return CGRectZero;
     }
-    UICollectionViewCell *cell = [self.titleTabCollectionView collectionView:self.titleTabCollectionView cellForItemAtIndexPath:indexPath];
+    UICollectionViewCell *cell = [self.titleTabCollectionView cellForItemAtIndexPath:indexPath];//[self.titleTabCollectionView collectionView:self.titleTabCollectionView cellForItemAtIndexPath:indexPath];
     CGRect cellFrame = cell.frame;
     return cellFrame;
 }
